@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2e026d; /* Darker purple for better contrast */
+    color: #f4f4f4; /* Light text for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.container {
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: slideIn 1s ease forwards;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #8100fe;
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+p {
+    font-size: 1.1rem;
+    
+    color: #555;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: #8100fe;
+}
+
+.contact-info {
+    margin-block: 2rem;
+    color: #333;
+}
+
+.contact-info a {
+    color: #8100fe;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.webbo-button {
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #8100fe;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #00fec8;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 30px;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .container {
+        padding: 30px;
+    }
+}
